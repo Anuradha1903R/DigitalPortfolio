@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header-content {
+            background-color: white
+            color: aqua;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;  /*Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 75px;
+            left: 75px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: justify ;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: bisque;
+        }
+
+        .section-content {
+            background-color: white;
+            text-align: justify;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: white;
+        }
+
+        .download-button{
+            background-color:#333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-button:hover{
+            background-color: #333333;
+            text-align: center;
+        }
+
+        footer{
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: aliceblue;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+    
+<body>
+    <header>
+        <p></p>
+    </header>
+
+    <nav>
+        <ul>
+            <div style="profile-picture": url('ImageLocation') ;
+            background-size: cover; height: 540px;>
+            <img src="Anuradha .png" style="height: 150px;" >
+            </div>
+
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <center>
+        <div class="logo"><h1>AnuRadha</h1></div>
+        <h2>Welcome to My Portfolio</h2>
+        <p>A showcase of my skills</p>
+        </center>
+    </header>
+
+    <section id="about">
+        <div class="section-content">
+        <h2>About Me</h2>
+        <p>Hi! This is AnuRadha</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+        <h2>Education</h2>
+        <p>B.sc Computer Science final year</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Web Development</li>
+            <li>Java</li>
+        </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+        <center>
+        <h2>Resume</h2>
+        <center>
+        <a href="Anuradha Resume.png" className="btn btn-outline"download>Download CV</a>     
+        </center>
+        </div>
+        </center> 
+    </div>
+    </section>
+
+    <footer>
+        <center>
+        <p>&copy; 2023 AnuRadha</p>
+        </center>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^"#"]').forEach(anchor => {
+            anchor.addEventListener('click',function(e) {
+                e.preventDefault();
+
+                const targetId = this.getattributs('href').substring(1);
+                const targetElement= document.getElementById(targetId);
+
+                if (targetElement){
+                    window.scrollTo({
+                        top: targeetElement.offsetTop,
+                        behavior: 'smooth'
+                   });
+               }
+           });
+        });
+    </script>
+</body>
+</html>
+
+
+    
